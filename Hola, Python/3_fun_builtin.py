@@ -69,7 +69,7 @@ print(
     sep='\n', # '\n' is the newline character - it starts a new line
 )
 
-# Argmax
+# Argmax - Funciones de orden superior
 def mod_5(x):
     """Return the remainder of x after dividing by 5"""
     return x % 5
