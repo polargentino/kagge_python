@@ -6,10 +6,10 @@ def evaluate_temp(temp):
     if temp > 38:
         message = "Fever!"
     return message
-# Normal temperature
-print(evaluate_temp(37))
-# Fever!(sólo escribimos un print, aqui escribimos dos para que al ajecutar Python nos muestre los dos mensajes)
-print(evaluate_temp(39))    
+
+print(evaluate_temp(37)) # Normal temperature
+# (sólo escribimos un print, aqui escribimos dos para que al ajecutar Python nos muestre los dos mensajes)
+print(evaluate_temp(39)) # Fever! 
 
 # El código debajo de "if" se ejecuta si la declaración es True
 # El código debajo de "else" se ejecuta si la declaración es False
@@ -19,7 +19,7 @@ def evaluate_temp_with_else(temp):
     else:
         message = "Normal temperature."
     return message
-print(evaluate_temp_with_else(37))
+print(evaluate_temp_with_else(37)) # Normal temperature.
 
 # Declaraciones "if"..."elif"..."else"
 def evaluate_temp_with_elif(temp):
@@ -30,7 +30,7 @@ def evaluate_temp_with_elif(temp):
     else:
         message = "Low temperature."
     return message
-print(evaluate_temp_with_elif(34))
+print(evaluate_temp_with_elif(34)) # Low temperature.
 
 # Declaraciones condicionales para realizar diferentes cálculos
 # Pago de impuestos según lo que gana
@@ -43,8 +43,8 @@ def get_taxes(earnings):
     return tax_owed
 ana_taxes = get_taxes(9000)
 bob_taxes = get_taxes(15000)
-print(ana_taxes)
-print(bob_taxes)
+print(ana_taxes) # 2250.0
+print(bob_taxes) # 4500.0
 
 # Acepta un número como entrada y suma 3 si es < 10
 # En caso contrario suma 8 si la entrada es > 10
@@ -54,8 +54,8 @@ def add_three_or_eight(number):
     else:
         result = number + 8
     return result
-print(add_three_or_eight(12))
-print(add_three_or_eight(5))
+print(add_three_or_eight(12)) # 20
+print(add_three_or_eight(5))  # 8
 
 # Multiples declaraciones "elif"
 def get_dose(weight):
@@ -74,7 +74,7 @@ def get_dose(weight):
     else:
         dose = 10
     return dose
-print(get_dose(12))
+print(get_dose(12)) # 5
 
 
 

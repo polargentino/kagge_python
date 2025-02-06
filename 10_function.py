@@ -4,4 +4,5 @@ def print_hello():
     print("Good morning!")
 
 # Llame a la función
-print_hello()
+print_hello() # Hello, you!
+              # Good morning!

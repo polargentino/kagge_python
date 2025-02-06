@@ -8,25 +8,25 @@ def can_run_for_president(age, is_natural_born_citizen):
     return is_natural_born_citizen and (age >= 35)
 
 # Imprimiendo los resultados
-print(can_run_for_president(19, True))
-print(can_run_for_president(55, False))
-print(can_run_for_president(55, True))
+print(can_run_for_president(19, True)) # False
+print(can_run_for_president(55, False)) # False
+print(can_run_for_president(55, True)) # True
 
 # True or True and False
 # Orden de evaluación de operadores lógicos
-# True and False = False(and requiere que ambos sean True)
-# True or False = True(or si al menos un de los operadores es True)
+# True and False = False("and": requiere que ambos sean True)
+# True or False = True("or": si al menos un de los operadores es True)
 resultado = True or (True and False) # Paréntesis para evitar confuciones
-print(resultado)
+print(resultado) # True
 
 
 # Define una variable que es True o False dependiendo de varias condiciones relacionadas con el clima y la preparación de la persona
 # Lógica para determinar si una persona está preparada para el clima:
-# prepared_for_weather = (
+#prepared_for_weather = (
 #     have_umbrella 
 #     or ((rain_level < 5) and have_hood) 
 #     or (not (rain_level > 0 and is_workday))
-# )
+#)
 # 
 # Desglose:
 # - Estás preparado si tienes un paraguas.

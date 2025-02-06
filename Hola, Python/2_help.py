@@ -8,6 +8,6 @@
 # help(print)
 
 # Ejemplo de sep: separador con carateres especiales
-print("Aprender", "Python", "es", "genial", sep="🌟")
+print("Aprender", "Python", "es", "genial", sep="🌟") # Aprender🌟Python🌟es🌟genial
 
 

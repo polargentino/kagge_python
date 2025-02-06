@@ -1,17 +1,3 @@
-# Condicionales : if, elif, else 
-def inspect(x):
-    if x == 0: # Pregunto por el valor de x
-        print(x, "is zero")
-    elif x > 0: # Verifiquemos esta nueva condición
-        print(x, "is positive")
-    elif x < 0: # Verifiquemos esta nueva condición
-        print(x, "is negative")
-    else: # Entonces
-        print(x, "is unlike anything I've ever seen...") # No se parece a nada que haya visto...
-inspect(0) # 0 is zero
-inspect(-15) # -15 is negative
-
-
 # Otro ejemplo
 def f(x):
     if x > 0:
@@ -25,5 +11,3 @@ def f(x):
 
 f(1)
 f(0)
-
-

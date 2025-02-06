@@ -14,10 +14,10 @@ def least_diference(a, b, c):
 
 # Python permite comas finales en las listas de argumentos. ¿Qué tan lindo es eso?
 print(
-    least_diference(1, 10, 100),
-    least_diference(1, 10, 10),
-    least_diference(5, 6, 7)
-    )
+    least_diference(1, 10, 100), # min(9, 90, 99) = 9
+    least_diference(1, 10, 10),  # min(9, 0, 9) = 0
+    least_diference(5, 6, 7)     # min(1, 1, 2) = 1
+    ) # Salida: 9 0 1
 
 # Qué pasaría si no incluimos la palabra clave return?
 def least_difference(a, b, c):
@@ -30,26 +30,26 @@ def least_difference(a, b, c):
     min(diff1, diff2, diff3)
     
 print(
-    least_difference(1, 10, 100),
-    least_difference(1, 10, 10),
-    least_difference(5, 6, 7),
-)
+    least_difference(1, 10, 100), 
+    least_difference(1, 10, 10),  
+    least_difference(5, 6, 7),    
+) # Salida: None None None
 
 # Otro ejemplo
 mystery = print()
-print(mystery)
+print(mystery) # None
 
 # Argumentos predeterminados
-print(1, 2, 3, sep=' < ')
+print(1, 2, 3, sep=' < ') # 1 < 2 < 3
 
 # Agregar argumentos opcionales con valores predeterminados
 def greet(who="Colin"):
-    print("Hello,", who)
+    print("Hello,", who) # Hello, Colin
     
 greet()
-greet(who="Kaggle")
-# (In this case, we don't need to specify the name of the argument, because it's unambiguous.)
-greet("world")
+greet(who="Kaggle") # Hello, Kaggle
+# (En este caso, no necesitamos especificar el nombre del argumento porque no es ambiguo).
+greet("world") # Hello, world
 
 # Funciones aplicadas a funciones
 def mult_by_five(x):
@@ -64,8 +64,8 @@ def squared_call(fn, arg):
     return fn(fn(arg))
 
 print(
-    call(mult_by_five, 1),
-    squared_call(mult_by_five, 1), 
+    call(mult_by_five, 1),         # 5
+    squared_call(mult_by_five, 1), # 25
     sep='\n', # '\n' is the newline character - it starts a new line
 )
 
@@ -75,9 +75,13 @@ def mod_5(x):
     return x % 5
 
 print(
-    'Which number is biggest?',
+    'Which number is biggest?', 
     max(100, 51, 14),
     'Which number is the biggest modulo 5?',
     max(100, 51, 14, key=mod_5),
     sep='\n',
-)
+) # Salida: 
+  # Which number is biggest?
+  # 100
+  # Which number is the biggest modulo 5?
+  # 14

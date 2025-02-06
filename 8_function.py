@@ -7,9 +7,10 @@ def get_pay(num_hours):
     return pay_aftertax
 # Calcular el salario basado en trabajar 40 horas
 pay_fulltime = get_pay(40)
-print(pay_fulltime)
+print(pay_fulltime) # 528.0
 # Calcular el salario basado en trabajar 32 horas     
 pay_parttime = get_pay(32)
-print(pay_parttime)
+print(pay_parttime) # 422.4
+
 
 

@@ -7,5 +7,5 @@ def add_three(input_var):
 new_number = add_three(10)
 
 # Comprueba que el valor es 13 como se esperaba
-print(new_number)
+print(new_number) # 13
 
