@@ -40,5 +40,26 @@ print(planets[1:-1]) # ['Venus', 'Earth', 'Mart', 'Jupiter', 'Saturn', 'Uranus']
 # Los ùltimos 3 planets
 print(planets[-3:])
 
+# Cambiando listas
+planets[3] = 'Malacandra'
+print(planets) # ['Mercury', 'Venus', 'Earth', 'Malacandra', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+
+planets[:3] = ['Mur','Vee','Ur']
+print(planets) # Eso fue una tonterìa. Devolvamosle sus antiguos nombres
+planets[:4] = ['Mercury','Venus','Earth','Mars'] # ['Mur', 'Vee', 'Ur', 'Malacandra', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+
+# Funciones de lista
+# Cùantos planetas hay
+print(len(planets)) # 8
+
+# Los planetas ordenados en orden alfabètico
+print(sorted(planets)) # ['Earth', 'Jupiter', 'Mars', 'Mercury', 'Neptune', 'Saturn', 'Uranus', 'Venus']
+
+# Sum hace lo que se podrìa esperar
+primes = [2, 3, 5, 7]
+print(sum(primes)) # 17
+
+# Tambièn podemos pasar un argumento de lista ùnica
+print(max(primes)) # 7
 
 
