@@ -62,4 +62,3 @@ print(sum(primes)) # 17
 # Tambièn podemos pasar un argumento de lista ùnica
 print(max(primes)) # 7
 
-
