@@ -24,11 +24,13 @@ print(resultado)  # Imprime la tupla (1, 8)
 
 # Estos mùltiples valores de retorno se pueden asignar individualmente de la sig. manera
 numerator, denominator = x.as_integer_ratio()
-print(numerator / denominator)
+print(numerator / denominator) # 0.125
 
 # Intercambiar dos variable
 a = 1
 b = 0
 a, b = b, a
-print(a, b)
-print(b ,a)
+print(a, b) # 0 1
+print(b ,a) # 1 0
+
+
