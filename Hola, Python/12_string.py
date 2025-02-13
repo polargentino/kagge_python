@@ -96,6 +96,13 @@ print(claim.find('plan'))  # Resultado: 11 - Devuelve -1 si no encuentra la subc
 # 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16
 print(claim.startswith(planet)) # True
 
+planeta = 'Plutón'  # Se asigna la cadena "Plutón" a la variable "planeta"
+
+afirmación = "¡Plutón es un planeta!"  # Se asigna la cadena "¡Plutón es un planeta!" a la variable "afirmación"
+
+print(afirmación.startswith(planeta))  # Se imprime el resultado de verificar si la cadena "afirmación" comienza con la cadena "planeta" (True)
+
+
 # Si planet tuviera un valor diferente, como "Mars", el resultado sería False 
 planet = "Mars"
 print(claim.startswith(planet))  # Resultado: False
