@@ -58,3 +58,30 @@ print(nums)
 # [16  5 31 43  1 33]
 # [ 0 16 40  2 42  3]
 
+# Sobrecarga del operador
+# listas = [1, 2, 3, 4, 5] + 10 (Error)
+lista = [3, 4, 1, 2, 2, 1] + [10]
+print(lista) # [3, 4, 1, 2, 2, 1, 10]
+
+print(rolls + 10) # [16 14 12 12 13 14 11 13 15 15]
+
+# ✅ Suma a cada elemento:(ChatGPT)
+# Si lo que quieres es sumar 10 a cada elemento de la lista:
+lista = [3, 4, 1, 2, 2, 1]
+nueva_lista = [x + 10 for x in lista]
+print(nueva_lista)  # [13, 14, 11, 12, 12, 11]
+
+# En què ìndice los dados son menos o iguales a 3
+print(rolls <= 3) # [ True  True False False  True  True  True  True  True  True]
+
+# Crear una matrìz bidimencional
+xlist = [[1,2,3],[2,4,6],]
+x = np.asarray(xlist)
+print("xlist = {}\nx = \n{}".format(xlist, x))
+
+# Obtenga el ùltimo elemento de la segunda fila de nuestra matrìz numpy
+print(x[1, -1]) # 6
+
+# Obtenga el último elemento de la segunda sublista de nuestra lista anidada
+print(xlist[1] [-1]) # 6
+
